@@ -3,10 +3,8 @@
 *.wav
 ecapa/ecapa/adversary_generation_enc_dec.yaml
 ecapa/ecapa/final.params
-ecapa/checkpoint_baseline/checkpoint_epoch_10.pth
 facodec/checkpoint/ns3_facodec_decoder.bin
 facodec/checkpoint/ns3_facodec_encoder.bin
-facodec/checkpoint_baseline/checkpoint_epoch_10.pth
 Dataset
 
 # Byte-compiled / optimized / DLL files
