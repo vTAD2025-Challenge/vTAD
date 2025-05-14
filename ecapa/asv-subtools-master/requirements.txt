@@ -1,0 +1,13 @@
+numpy
+pyyaml
+thop
+scipy
+sklearn
+pandas
+packaging
+matplotlib
+tensorboard
+tensorboardX
+tqdm>=4.42.0
+# progressbar
+# progressbar2

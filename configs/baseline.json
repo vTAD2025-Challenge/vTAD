@@ -1,0 +1,59 @@
+{
+    
+  "ecapa_tdnn": {
+    "audio_dir": "Dataset/VCTK/wav16",
+    "params":"ecapa/ecapa/final.params",
+    "yaml":"ecapa/ecapa/adversary_generation_enc_dec.yaml",
+    "outpath":"ecapa/emb"  
+  },
+  "train_ecapa_tdnn": {
+    "train_path": "Dataset/ecapa_filelist/train_path.txt",
+    "val_path": "Dataset/ecapa_filelist/unseen_path_new.txt",
+    "checkpoint_dir": "ecapa/checkpoint_train",
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.00005,
+    "seed": 42,
+    "val_epoch": 1
+  },
+
+  "infer_ecapa_tdnn": {
+    "test_path": "Dataset/ecapa_filelist/demo_path_infer.txt",
+    "model_output": "ecapa/result/model_output_demo.txt",
+    "checkpoint_path": "ecapa/checkpoint_baseline/checkpoint_epoch_10.pth"
+  },
+
+
+  "facodec": {
+    "audio_dir": "Dataset/VCTK/wav16",
+    "encoder_ckpt":"facodec/checkpoint/ns3_facodec_encoder.bin",
+    "decoder_ckpt":"facodec/checkpoint/ns3_facodec_decoder.bin",
+    "spk_embs_save_base_path":"facodec/emb"
+   
+  },
+
+  "train_facodec": {
+    "train_path": "Dataset/facodec_filelist/train_path.txt",
+    "val_path": "Dataset/facodec_filelist/unseen_path_new.txt",
+    "checkpoint_dir": "facodec/checkpoint_train",
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.000025,
+    "seed": 42,
+    "val_epoch": 1
+  },
+
+  "infer_facodec": {
+    "test_path": "Dataset/facodec_filelist/demo_path_infer.txt",
+    "model_output": "facodec/result/model_output_demo.txt",
+    "checkpoint_path": "facodec/checkpoint_baseline/checkpoint_epoch_10.pth"
+  },
+
+
+  "acc_eer": {
+    "model_output": "ecapa/result/model_output_demo.txt",
+    "test_path": "Dataset/ecapa_filelist/demo_path_label.txt",
+    "result_path": "ecapa/result/result_demo.txt"
+  }
+
+}
