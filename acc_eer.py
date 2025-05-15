@@ -135,5 +135,5 @@ def main(config_path):
 
 
 if __name__ == "__main__":
-    config_path = "configs/VADV_baseline.json"  # 配置文件路径
+    config_path = "configs/baseline.json"  # 配置文件路径
     main(config_path)
