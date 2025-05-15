@@ -18,6 +18,11 @@ The annotation information for some of the data is as follows:
 
 ## Dependencies
 Our experiment was conducted in a `Python==3.8.20` environment for training and testing.
+Please run the following command :
+```
+pip install torch==1.12.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+Then run the following command to install other dependencies:
 ```
 pip install -r requirements.txt
 ```
