@@ -6,7 +6,7 @@ from tqdm import tqdm
 from ns3_codec import FACodecEncoder, FACodecDecoder
 
 # 加载配置文件
-config_path = 'configs/VADV_baseline.json'
+config_path = 'configs/baseline.json'
 with open(config_path, 'r') as f:
     config = json.load(f)
 
