@@ -68,16 +68,6 @@ def calculate_acc_eer(model_output, test_path):
         eer, eer_threshold = compute_eer(np.array(true_labels_for_attr), np.array(predicted_scores))
         eer_results[attribute] = eer * 100  # 转换为百分比
 
-    # 计算总ACC和总EER
-    all_pred_labels = [label for labels in predictions.values() for _, label in labels]
-    all_true_labels = [label for labels in true_labels.values() for label in labels]
-
-    total_correct_predictions = sum([1 for pred, true in zip(all_pred_labels, all_true_labels) if pred == true])
-    total_acc = (total_correct_predictions / len(all_true_labels)) * 100
-
-    total_fnr = sum([1 for pred, true in zip(all_pred_labels, all_true_labels) if pred == 0 and true == 1]) / len(all_true_labels)
-    total_fpr = sum([1 for pred, true in zip(all_pred_labels, all_true_labels) if pred == 1 and true == 0]) / len(all_true_labels)
-    total_eer = (total_fnr + total_fpr) / 2 * 100  # 转换为百分比
 
     # 计算Male和Female的平均ACC和EER
     male_acc = [acc_results[attr] for attr in acc_results if "_M" in attr]
@@ -99,10 +89,8 @@ def calculate_acc_eer(model_output, test_path):
 
     result_lines.append(f"Male Average Accuracy: {male_acc_avg:.2f}")
     result_lines.append(f"Female Average Accuracy: {female_acc_avg:.2f}")
-    result_lines.append(f"Total Accuracy: {total_acc:.2f}")
     result_lines.append(f"Male Average EER: {male_eer_avg:.2f}%")
     result_lines.append(f"Female Average EER: {female_eer_avg:.2f}%")
-    result_lines.append(f"Total EER: {total_eer:.2f}%")
 
     # 打印结果
     for line in result_lines:
