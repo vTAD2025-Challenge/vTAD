@@ -110,7 +110,7 @@ def infer_model(test_file, model_output_path, checkpoint_path, model):
 
 if __name__ == '__main__':
     # 读取配置文件
-    config_file = 'configs/VADV_baseline.json'
+    config_file = 'configs/baseline.json'
     with open(config_file, 'r') as f:
         config = json.load(f)
 

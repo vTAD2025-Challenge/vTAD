@@ -20,7 +20,7 @@ def set_seed(seed):
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
 
-def get_config(config_file='configs/VADV_baseline.json'):
+def get_config(config_file='configs/baseline.json'):
     with open(config_file, 'r') as f:
         config_data = json.load(f)
 
