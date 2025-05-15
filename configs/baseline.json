@@ -8,7 +8,7 @@
   },
   "train_ecapa_tdnn": {
     "train_path": "Dataset/ecapa_filelist/train_path_label.txt",
-    "val_path": "Dataset/ecapa_filelist/model_output_demo.txt",
+    "val_path": "Dataset/ecapa_filelist/demo_path_label.txt",
     "checkpoint_dir": "ecapa/checkpoint_train",
     "epochs": 10,
     "batch_size": 16,
@@ -34,7 +34,7 @@
 
   "train_facodec": {
     "train_path": "Dataset/facodec_filelist/train_path_label.txt",
-    "val_path": "Dataset/facodec_filelist/model_output_demo.txt",
+    "val_path": "Dataset/ecapa_filelist/demo_path_label.txt",
     "checkpoint_dir": "facodec/checkpoint_train",
     "epochs": 10,
     "batch_size": 16,
