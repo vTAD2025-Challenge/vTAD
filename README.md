@@ -1,5 +1,6 @@
-# Recipe for vATD Challenge 2025
-Please visit the [challenge website](https://www.ncmmsc.org.cn/tsyt/) for more information about the Challenge.
+# Recipe for vTAD Challenge 2025
+Please visit the [challenge website](https://vtad2025-challenge.github.io/) for more information about the Challenge.
+Decription of the baseline methods can be found in: [baseline paper link].(https://drive.google.com/file/d/1QCqiszJY3-j4O25oZMY2dQUu7W1UouEc/view?usp=drive_link) 
 
 ## Data 
 The VCTK-RVA dataset is employed in our work, wherein the publicly available VCTK database was annotated for timbre intensity.
