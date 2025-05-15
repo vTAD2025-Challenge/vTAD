@@ -9,7 +9,7 @@ from model.ecapa_tdnn_xvector import ECAPA_TDNN
 import yaml
 
 # Load JSON configuration file
-with open('configs/VADV_baseline.json', 'r') as f:
+with open('configs/baseline.json', 'r') as f:
     config_data = json.load(f)
 
 # Extract necessary paths from the JSON config
