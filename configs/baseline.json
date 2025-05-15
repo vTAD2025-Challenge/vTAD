@@ -34,7 +34,7 @@
 
   "train_facodec": {
     "train_path": "Dataset/facodec_filelist/train_path_label.txt",
-    "val_path": "Dataset/ecapa_filelist/demo_path_label.txt",
+    "val_path": "Dataset/facodec_filelist/demo_path_label.txt",
     "checkpoint_dir": "facodec/checkpoint_train",
     "epochs": 10,
     "batch_size": 16,
