@@ -29,6 +29,7 @@ pip install -r requirements.txt
 ```
 ## 1.Extract speaker embeddings
 In this experiment, we used `ECAPA-TDNN` and `FACodec` as pre-trained speaker encoder to extract speaker embeddings.
+The checkpoint for these two pre-trained speaker encoder can be downloaded from [the link](https://drive.google.com/file/d/1lmzrzSdV-Fw9MjpyUV70mSOKjkkPZ6sO/view?usp=drive_link).
 
 ### 1.1 ECAPA-TDNN
 When using `ECAPA-TDNN` as a speaker encoder to extract speaker embeddings, we need to ensure that we have the following two configuration files.
