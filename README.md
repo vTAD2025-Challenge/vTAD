@@ -5,7 +5,7 @@ Decription of the baseline methods can be found in: [baseline paper link](https:
 ## Data 
 The VCTK-RVA dataset is employed in our work, wherein the publicly available VCTK database was annotated for timbre intensity.
 
-The `Dataset/attribute/train.txt` contains the annotation information for the training set of this competition.
+The `Dataset/attribute_pair/train.txt` contains the annotation information for the training set of this competition.
 The annotation information for some of the data is as follows:
 ```
 明亮_F: p314|p268, p262|p257, p294|p250...
